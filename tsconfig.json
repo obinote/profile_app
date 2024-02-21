@@ -1,0 +1,22 @@
+{
+  "extends": "@react-native/typescript-config/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "*": ["./src/*"],
+      // "apis/*": ["./src/apis/*"],
+      "components/*": ["./src/components/*"],
+      "locales/*": ["./src/locales/*"],
+      "navigations/*": ["./src/navigations/*"],
+      "reduxs/*": ["./src/reduxs/*"],
+      "screens/*": ["./src/screens/*"],
+      // "types/*": ["./src/types/*"],
+      // "hooks/*": ["./src/hooks/*"],
+      "utils/*": ["./src/utils/*"],
+      // "schema/*": ["./src/schema/*"]
+    }
+  }
+}
