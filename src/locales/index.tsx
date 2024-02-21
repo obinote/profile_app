@@ -12,8 +12,8 @@ export const setupTranslation = () => {
 
   i18n.use(initReactI18next).init({
     resources,
-    lng: locales.ID_ID,
-    fallbackLng: locales.ID_ID,
+    lng: locales.EN_US,
+    fallbackLng: locales.EN_US,
     keySeparator: false,
 
     interpolation: {
