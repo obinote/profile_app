@@ -2,9 +2,10 @@ import {useNavigation} from '@react-navigation/native';
 import {Avatar} from '@rneui/themed';
 import ButtonAction from 'components/ui/ButtonAction';
 import ViewText from 'components/ui/ViewText';
+import LocalSvgIcon from 'components/ui/icons';
 import React, {useCallback} from 'react';
 import {useTranslation} from 'react-i18next';
-import {View} from 'react-native';
+import {TouchableOpacity, View} from 'react-native';
 import {useSelector} from 'react-redux';
 import {profileSelector} from 'reduxs/selectors';
 import tw from 'utils/tailwind';
@@ -26,9 +27,15 @@ const Main: React.FC<{}> = () => {
           <Avatar
             size={200}
             rounded
-            containerStyle={tw`mb-8`}
+            containerStyle={tw`mb-8 border border-blue-300`}
             source={{uri: profile.picture}}
           />
+          <TouchableOpacity onPress={() => navigation.navigate('Upload')}>
+            <View
+              style={tw`absolute bottom-12 right-2 bg-sky-100 p-2 rounded-full border-2 border-blue-300`}>
+              <LocalSvgIcon name="upload" />
+            </View>
+          </TouchableOpacity>
         </View>
         <View
           style={tw.style(

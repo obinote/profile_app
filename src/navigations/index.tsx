@@ -35,8 +35,8 @@ function RootNavigator(): JSX.Element {
             }}
           />
           <Screen
-            name={ROUTES.Modal}
-            getComponent={() => require('screens/modal').default}
+            name={ROUTES.Upload}
+            getComponent={() => require('screens/upload').default}
             options={{
               headerShown: false,
               animation: 'none',

@@ -5,10 +5,10 @@
         android:drawable="@color/splashscreen_bg"/>
 
     <item
-        android:width="300dp"
+        android:width="275dp"
         android:height="300dp"
         android:bottom="20dp"
-        android:drawable="@drawable/ic_launcher_web"
+        android:drawable="@drawable/lc_launcher_rn"
         android:gravity="center" />
 
 </layer-list>
